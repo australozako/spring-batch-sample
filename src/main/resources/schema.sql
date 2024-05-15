@@ -1,8 +1,9 @@
 DROP TABLE people IF EXISTS;
 
-CREATE TABLE people  (
+-- Créer la table people
+CREATE TABLE people (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    first_name VARCHAR(20),
-    last_name VARCHAR(20),
-    age INT
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    age INT NOT NULL
 );
